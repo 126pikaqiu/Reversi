@@ -81,13 +81,7 @@ class Reversi {
         System.out.print(color == Constant.WHITE?"○":"●" + " player has no valid move.");
     }
     private void printScore(){
-        int comScore = computerPlayer.getScore();
-        int plyScore = player.getScore();
-        if(computerPlayer.getColor() == Constant.BLACK){
-            System.out.println("● : ○ = " + comScore + " : " + plyScore);
-        }else{
-            System.out.println("● : ○ = " + plyScore + " : " + comScore);
-        }
+        System.out.println("● : ○ = " + getScore());
     }
     private int getSize(){
         Scanner scanner = new Scanner(System.in);
@@ -107,7 +101,7 @@ class Reversi {
         }
         return color.toUpperCase().charAt(0) == 'X'?Constant.BLACK:Constant.WHITE;
     }
-    private int getDimen(){
+    int getDimen(){
         return chess.getDimension();
     }
 
@@ -141,6 +135,13 @@ class Reversi {
                 printChess();
             }else {
                 System.out.println(Constant.INVALID_MOVE);
+                System.out.println(Constant.GAME_OVER);
+                if(player.getColor() == Constant.BLACK){
+                    System.out.println(Constant.OWIN);
+                }else{
+                    System.out.println(Constant.XWIN);
+                }
+                System.exit(0);
             }
         }
         else{
@@ -155,5 +156,22 @@ class Reversi {
         }else{
             printNoValid(computerPlayer.getColor());
         }
+    }
+    int getComputerColor(){
+        return computerPlayer.getColor();
+    }
+    String getScore(){
+        String score = "";
+        int comScore = computerPlayer.getScore();
+        int plyScore = player.getScore();
+        if(computerPlayer.getColor() == Constant.BLACK){
+            score = comScore + " : " + plyScore;
+        }else{
+            score = plyScore + " : " + comScore;
+        }
+        if(comScore + plyScore != getDimen() * getDimen()){
+            score = Constant.HUMAN_GAVE_UP;
+        }
+        return score;
     }
 }

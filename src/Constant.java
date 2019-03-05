@@ -17,4 +17,5 @@ class Constant {
     static final String GAME_OVER = "Game over. ";
     static final String DIMENSION = "Enter the board dimension:";
     static final String ENTER_COLOR = "Computer plays (X/O):";
+    static final String HUMAN_GAVE_UP = "Human gave up";
 }
