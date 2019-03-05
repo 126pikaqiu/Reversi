@@ -12,11 +12,11 @@ class Reversi {
 
     private Chess chess;
     void start(){
-        computerPlayer.start(chess);
-        player.start(chess);
         int size = getSize();
         chess = new Chess(size);
         int color = getColor();
+        computerPlayer.start(chess);
+        player.start(chess);
         computerPlayer.setColor(color);
         player.setColor(Constant.getAnotherColor(color));
         if(color == Constant.BLACK){
@@ -95,17 +95,15 @@ class Reversi {
         while (!(size % 2 == 0 && size >= 4 && size <= 26)){
             System.out.print(Constant.DIMENSION);
             size = scanner.nextInt();
-            System.out.println();
         }
         return size;
     }
     private int getColor(){
         Scanner scanner = new Scanner(System.in);
         String color = "a";
-        while (color.toUpperCase().charAt(0) != 'X' || color.toUpperCase().charAt(0) != 'O'){
+        while (color.toUpperCase().charAt(0) != 'X' && color.toUpperCase().charAt(0) != 'O'){
             System.out.print(Constant.ENTER_COLOR);
             color = scanner.next();
-            System.out.println();
         }
         return color.toUpperCase().charAt(0) == 'X'?Constant.BLACK:Constant.WHITE;
     }
@@ -133,7 +131,7 @@ class Reversi {
         String pos = "a1";
         while(!(pos.length() >= 2 && pos.charAt(0) >= 'a' && pos.charAt(0) <= 'a' + size - 1 && pos.charAt(1) >= 'a' && pos.charAt(1) <= 'a' + size - 1)){
             System.out.print("Enter move for " + (color == Constant.BLACK?"●":"○") + " (RowCol): ");
-            pos = scanner.nextLine().trim();
+            pos = scanner.nextLine().trim().toLowerCase();
         }
         return new Positon(pos.charAt(0) - 'a',pos.charAt(1) - 'a');
     }
