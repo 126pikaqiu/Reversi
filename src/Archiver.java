@@ -11,7 +11,7 @@ import java.util.Date;
  * @Author: jiaxing liu
  * @Date: 2019/3/5 11:07
  */
-public class Archiver {
+class Archiver {
     void archive(Reversi reversi) throws IOException, BiffException, WriteException {
         createXl();
         editXl(reversi);
@@ -39,7 +39,7 @@ public class Archiver {
             wtSheet = wtbook.getSheet(0);
             int rawNum = wtSheet.getRows();
             String[] data = getData(reversi);
-            for(int i = 0; i < 5; i++){
+            for(int i = 0; i < 6; i++){
                 Label lbl = new Label(i, rawNum, data[i]);
                 wtSheet.addCell(lbl);
             }
@@ -62,18 +62,19 @@ public class Archiver {
         }
     }
     private String[] getData(Reversi reversi){
-        String[] data = new String[5];
+        String[] data = new String[6];
         data[0] = getTime();
-        data[1] = "" + reversi.getDimen() + "*" + reversi.getDimen();
-        data[2] = reversi.getComputerColor() == Constant.WHITE?"human":"computer";
-        data[3] = reversi.getComputerColor() == Constant.BLACK?"human":"computer";
-        data[4] = reversi.getScore();
+        data[1] = "" + (reversi.getTime() / 1000);
+        data[2] = "" + reversi.getDimen() + "*" + reversi.getDimen();
+        data[3] = reversi.getComputerColor() == Constant.WHITE?"human":"computer";
+        data[4] = reversi.getComputerColor() == Constant.BLACK?"human":"computer";
+        data[5] = reversi.getScore();
         return data;
     }
     private String getTime(){
         long l = System.currentTimeMillis();
         Date date = new Date(l);
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd HH:mm:ss");System.out.println(dateFormat.format(date));
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd HH:mm:ss");
         return dateFormat.format(date);
     }
 }

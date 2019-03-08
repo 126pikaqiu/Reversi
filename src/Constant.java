@@ -18,4 +18,5 @@ class Constant {
     static final String DIMENSION = "Enter the board dimension:";
     static final String ENTER_COLOR = "Computer plays (X/O):";
     static final String HUMAN_GAVE_UP = "Human gave up";
+    static final String DIMENSION_NOT_LEGAL = "The dimension must be even and between 4 with 26.";
 }

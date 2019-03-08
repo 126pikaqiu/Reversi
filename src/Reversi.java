@@ -10,6 +10,16 @@ class Reversi {
 
     private Player player = new Player();
 
+    private boolean isGaveUp;
+    long getTime() {
+        return time;
+    }
+
+    public void setTime(long time) {
+        this.time = time;
+    }
+
+    private long time;
     private Chess chess;
     void start(){
         int size = getSize();
@@ -25,14 +35,14 @@ class Reversi {
             printChess();
         }
     }
-    private boolean win(){
+    private boolean oWin(){
         return player.getScore() > computerPlayer.getScore() && player.getColor() == Constant.WHITE;
     }
     private boolean tie(){
         return player.getScore() == computerPlayer.getScore();
     }
     private String gameOver(){
-        if(win()){
+        if(oWin()){
             return Constant.OWIN;
         }else if(tie()){
             return Constant.TIE;
@@ -106,16 +116,23 @@ class Reversi {
     }
 
     void play(){
+        time = System.currentTimeMillis();
         while (!checkGameOver()){
-            playerMove();
+            if(!playerMove()){
+                time = System.currentTimeMillis() - time;
+                isGaveUp = true;
+                return;
+            }
+            if(checkGameOver()) break;
             computerMove();
         }
-        if((chess.checkDead(Constant.WHITE) && chess.checkDead(Constant.WHITE))) {
+        if((chess.checkDead(Constant.WHITE) && chess.checkDead(Constant.WHITE)) && !chess.checkFull()) {
             System.out.println(Constant.BOTH_NO_VALID);
         }
         System.out.println(Constant.GAME_OVER);
         printScore();
         System.out.println(gameOver());
+        time = System.currentTimeMillis() - time;
     }
 
     private Positon getPosition(){
@@ -129,7 +146,7 @@ class Reversi {
         }
         return new Positon(pos.charAt(0) - 'a',pos.charAt(1) - 'a');
     }
-    private void playerMove(){
+    private boolean playerMove(){
         if(player.canMove()) {
             if(player.move(getPosition(),computerPlayer)){
                 printChess();
@@ -141,12 +158,13 @@ class Reversi {
                 }else{
                     System.out.println(Constant.XWIN);
                 }
-                System.exit(0);
+                return false;
             }
         }
         else{
             printNoValid(player.getColor());
         }
+        return true;
     }
     private void computerMove(){
         if(computerPlayer.canMove()){
@@ -160,6 +178,7 @@ class Reversi {
     int getComputerColor(){
         return computerPlayer.getColor();
     }
+
     String getScore(){
         String score = "";
         int comScore = computerPlayer.getScore();
@@ -169,7 +188,7 @@ class Reversi {
         }else{
             score = plyScore + " : " + comScore;
         }
-        if(comScore + plyScore != getDimen() * getDimen()){
+        if(isGaveUp){
             score = Constant.HUMAN_GAVE_UP;
         }
         return score;

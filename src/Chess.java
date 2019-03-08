@@ -98,8 +98,8 @@ class Chess {
         addPiece(new Piece(color,x,y));
         return count;
     }
-    int move(Positon positon, int color){
-        return move(positon.getPosition_x(), positon.getPosition_y(), color);
+    void move(Positon positon, int color){
+        move(positon.getPosition_x(), positon.getPosition_y(), color);
     }
 
     boolean checkDead(int color){ //无子可下
