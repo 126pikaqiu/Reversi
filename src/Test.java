@@ -12,7 +12,6 @@ public class Test {
         Reversi reversi = new Reversi();
         reversi.start();
         reversi.play();
-        Archiver archiver = new Archiver();
-        archiver.archive(reversi);
+        reversi.archive();
     }
 }

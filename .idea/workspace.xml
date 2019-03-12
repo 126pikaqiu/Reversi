@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/Test.java" description="import jxl.write.WriteException;" line="1" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="dd231cf3-fb3d-412b-b27d-7549a338e522" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reversi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Reversi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Archiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Archiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Reversi/Chess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Reversi/Chess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Reversi/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Reversi/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Reversi/Reversi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Reversi/Reversi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Reversi/Reversi.xls" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Reversi/Reversi.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Reversi/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Reversi/Util.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Reversi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reversi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Chess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-104">
-              <caret line="78" column="13" lean-forward="true" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+            <state relative-caret-position="1156">
+              <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -39,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="238">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,15 +65,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Reversi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2348">
-              <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+            <state relative-caret-position="547">
+              <caret line="201" column="20" selection-start-line="201" selection-start-column="20" selection-end-line="201" selection-end-column="20" />
               <folding>
-                <element signature="e#221#222#0" expanded="true" />
-                <element signature="e#248#249#0" expanded="true" />
-                <element signature="e#286#287#0" expanded="true" />
-                <element signature="e#318#319#0" expanded="true" />
-                <element signature="e#2695#2696#0" expanded="true" />
-                <element signature="e#2754#2755#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-580">
+            <state relative-caret-position="102">
               <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
@@ -113,7 +113,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MySettingStage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
+            <state relative-caret-position="816">
               <caret line="56" column="61" selection-start-line="56" selection-start-column="61" selection-end-line="56" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -145,21 +145,23 @@
         <option value="$PROJECT_DIR$/src/Util.java" />
         <option value="$PROJECT_DIR$/src/Chess.java" />
         <option value="$PROJECT_DIR$/src/Reversi.java" />
+        <option value="$PROJECT_DIR$/src/Test.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="112" />
+    <option name="y" value="76" />
     <option name="width" value="1440" />
-    <option name="height" value="1038" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,7 +183,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552037190292" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552038161307" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -227,27 +229,28 @@
       <updated>1552019649558</updated>
       <workItem from="1552019651011" duration="3131000" />
       <workItem from="1552031373680" duration="1686000" />
-      <workItem from="1552035682056" duration="1904000" />
+      <workItem from="1552035682056" duration="2454000" />
+      <workItem from="1552358126460" duration="77000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6721000" />
+    <option name="totallyTimeSpent" value="7348000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="1152" height="830" extended-state="0" />
+    <frame x="90" y="61" width="1152" height="831" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3153565" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32084095" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27363896" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.12893982" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -257,6 +260,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -285,15 +289,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Chess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-104">
-          <caret line="78" column="13" lean-forward="true" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Archiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+        <state relative-caret-position="1156">
+          <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -304,18 +301,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Reversi.java">
+    <entry file="file://$PROJECT_DIR$/src/Archiver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2348">
-          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-          <folding>
-            <element signature="e#221#222#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#2695#2696#0" expanded="true" />
-            <element signature="e#2754#2755#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="578">
+          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -328,7 +317,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-580">
+        <state relative-caret-position="102">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
@@ -349,8 +338,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MySettingStage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
+        <state relative-caret-position="816">
           <caret line="56" column="61" selection-start-line="56" selection-start-column="61" selection-end-line="56" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Reversi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="201" column="20" selection-start-line="201" selection-start-column="20" selection-end-line="201" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -359,8 +358,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        <state relative-caret-position="238">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

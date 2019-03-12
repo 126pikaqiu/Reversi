@@ -1,3 +1,7 @@
+import jxl.read.biff.BiffException;
+import jxl.write.WriteException;
+
+import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -192,5 +196,9 @@ class Reversi {
             score = Constant.HUMAN_GAVE_UP;
         }
         return score;
+    }
+    void archive() throws WriteException, IOException, BiffException {
+        Archiver archiver = new Archiver();
+        archiver.archive(this);
     }
 }
