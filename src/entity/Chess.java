@@ -24,10 +24,6 @@ class Chess {
         return pieces;
     }
 
-    public void setPieces(Piece[][] pieces) {
-        this.pieces = pieces;
-    }
-
     private Piece[][] pieces;
     Chess(int size){
         this.dimension = size;
@@ -36,9 +32,6 @@ class Chess {
         addPiece(new Piece(InfoConstant.WHITE,size / 2 - 1, size / 2 - 1));
         addPiece(new Piece(InfoConstant.BLACK,size / 2 - 1, size / 2));
         addPiece(new Piece(InfoConstant.BLACK,size / 2, size / 2 - 1));
-    }
-    private Piece getPiece(int x, int y){ //根据位置获得棋子
-        return pieces[x][y];
     }
     private void addPiece(Piece piece){
         int x = piece.getPositon().getPosition_x();

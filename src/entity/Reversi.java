@@ -42,6 +42,8 @@ public class Reversi {
             computerPlayer.autoMove(player);
             printComputerMove();
             printChess();
+        }else {
+            printChess();
         }
     }
     private boolean oWin(){

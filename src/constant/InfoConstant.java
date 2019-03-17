@@ -5,7 +5,7 @@ package constant;
  * @Date: 2019/3/2 12:44
  */
 public class InfoConstant {
-    public static String ICONS = "ⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ";
+    public static final String ICONS = "ⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ";
     public static final int  BLACK = 0;
     public static final int  WHITE = 1;
     public static final String OWIN = "○ player wins. ";
