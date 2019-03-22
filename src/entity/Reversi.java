@@ -77,20 +77,20 @@ public class Reversi {
         String icons = InfoConstant.ICONS;
         Piece[][] pieces = chess.getPieces();
         int size = pieces.length;
-        System.out.print("   ");
+        System.out.print(InfoConstant.STRING_WHITE_BLACK);
         for(int i = 0; i < size; i++){
-            System.out.print(" " + icons.charAt(i));
+            System.out.print(icons.charAt(i));
         }
         System.out.println();
         for(int i = 0; i < size; i++){
-            System.out.print("　" + icons.charAt(i));
+            System.out.print(icons.charAt(i));
             for(int j = 0; j < size; j++){
                 if(pieces[i][j] == null){
-                    System.out.print(" ☐");
+                    System.out.print(InfoConstant.STRING_WALL);
                 }else if(pieces[i][j].getColor() == InfoConstant.BLACK){
-                    System.out.print(" ●");
+                    System.out.print(InfoConstant.STRING_BLACK);
                 }else{
-                    System.out.print(" ○");
+                    System.out.print(InfoConstant.STRING_WHITE);
                 }
             }
             System.out.println();
@@ -105,12 +105,12 @@ public class Reversi {
     }
     private int getSize(){
         Scanner scanner = new Scanner(System.in);
-        int size = 3;
-        while (!(size % 2 == 0 && size >= 4 && size <= 26)){
+        String size = "3";
+        while (!(!"".equals(size) && Util.isNumeric(size) && Integer.parseInt(size) >= 4 && Integer.parseInt(size) <= 26 && Integer.parseInt(size) % 2 == 0)){
             System.out.print(InfoConstant.DIMENSION);
-            size = scanner.nextInt();
+            size = scanner.nextLine();
         }
-        return size;
+        return Integer.parseInt(size);
     }
     private int getColor(){
         Scanner scanner = new Scanner(System.in);

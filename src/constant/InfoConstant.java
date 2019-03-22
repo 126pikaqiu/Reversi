@@ -26,4 +26,6 @@ public class InfoConstant {
     public static final String COMPUTER_MOVE = "Computer places {0} {1}";
     public static final String HAS_NO_VALID_MOVE = "{0} player has no valid move.";
     public static final String PLAYER_ENTER = "Enter move for {0} (RowCol): ";
+    public static final String STRING_WALL = "☐";
+    public static final String STRING_WHITE_BLACK = "∪";
 }
